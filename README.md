@@ -50,7 +50,9 @@ Comando de creación de 'dam_alp2' igual que en la creacion de dam_alp1.
 
 <img width="730" height="352" alt="SIIII" src="https://github.com/user-attachments/assets/24cc987a-7bef-49b2-9d39-83c893b2fedf" />
 
+# 6. Salgo del terminal, ¿qué le pasó al contenedor? 
 
+Al escribir exit en esa ventana extra (docker exec), solo cerramos la sesión de terminal. El proceso principal del contenedor (que era /bin/sh) sigue corriendo en segundo plano, porque lo arrancamos con la opción -d (detached) para que no se detuviera.
 
 
 
