@@ -43,7 +43,12 @@ docker inspect -f '{{.NetworkSettings.IPAddress}}' dam_alp1
 ```
 <img width="930" height="301" alt="CAPTURA" src="https://github.com/user-attachments/assets/e2403aae-7ece-49e5-b14e-deb71cbf7304" />
 
+# 5. Creación de 'dam_alp2' y prueba de ping entre contenedores
+Se crea un segundo contenedor y se comprueba la comunicación de red interna entre los dos contenedores.
 
+Comando de creación de 'dam_alp2' igual que en la creacion de dam_alp1.
+
+<img width="730" height="352" alt="SIIII" src="https://github.com/user-attachments/assets/24cc987a-7bef-49b2-9d39-83c893b2fedf" />
 
 
 
