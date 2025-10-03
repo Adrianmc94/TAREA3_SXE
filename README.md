@@ -54,6 +54,13 @@ Comando de creación de 'dam_alp2' igual que en la creacion de dam_alp1.
 
 Al escribir exit en esa ventana extra (docker exec), solo cerramos la sesión de terminal. El proceso principal del contenedor (que era /bin/sh) sigue corriendo en segundo plano, porque lo arrancamos con la opción -d (detached) para que no se detuviera.
 
+# 7. Espacio en disco duro ocupado
 
+```bash
+docker system df
+```
+<img width="722" height="160" alt="sy" src="https://github.com/user-attachments/assets/d3a808e3-06e6-453c-91ed-aa7de729fa7f" />
+-Imagenes : Ocupé un total de 12.88 MB de espacio en disco con la imagen base de Alpine.
+-Contenedores (Containers): Los contenedores creados (la parte de escritura de cada uno) ocupan un total de 28.67 kB.
 
 
