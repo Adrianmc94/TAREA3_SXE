@@ -63,4 +63,15 @@ docker system df
 -Imagenes : Ocupé un total de 12.88 MB de espacio en disco con la imagen base de Alpine.
 -Contenedores (Containers): Los contenedores creados (la parte de escritura de cada uno) ocupan un total de 28.67 kB.
 
+# 8. Consumo de RAM de los contenedores:
+
+```bash
+docker stats
+```
+<img width="1352" height="186" alt="listo" src="https://github.com/user-attachments/assets/2fbb936d-454a-45f4-ae95-f3f9b946908b" />
+
+Contenedor dam_alp1: Está usando 1.414 MiB (Megabytes) de memoria RAM.
+
+Contenedor dam_alp2: Está usando 520 KiB (Kilobytes) de memoria RAM.
+
 
