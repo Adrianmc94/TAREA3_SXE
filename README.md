@@ -35,6 +35,14 @@ Comando para obtener la IP:
 ```bash
 docker inspect -f '{{.NetworkSettings.IPAddress}}' dam_alp1
 ```
+El comando docker inspect muestra información detallada del contenedor. El flag -f se usa para filtrar y mostrar solo el valor de la dirección IP.
+
+Comando de prueba de conectividad (debe ejecutarse dentro del contenedor, después de acceder con docker exec):
+```bash
+docker inspect -f '{{.NetworkSettings.IPAddress}}' dam_alp1
+```
+<img width="930" height="301" alt="CAPTURA" src="https://github.com/user-attachments/assets/e2403aae-7ece-49e5-b14e-deb71cbf7304" />
+
 
 
 
