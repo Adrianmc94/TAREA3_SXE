@@ -17,3 +17,23 @@ docker ps -a
 ```
 El comando docker create crea la estructura del contenedor a partir de la imagen alpine pero no lo arranca inmediatamente. Solo lo prepara.
 El comando docker ps -a lista todos los contenedores, incluidos los detenidos.
+
+# 3. Creación y acceso al contenedor 'dam_alp1'
+Comando de creación y arranque:
+```bash
+docker run -dit --name dam_alp1 alpine /bin/sh
+```
+run se usa para arrancar el contenedor 
+--name asigna el nombre
+alpine /bin/sh: Usa la imagen alpine e inicia el intérprete de comandos (/bin/sh), que mantiene el contenedor en estado de ejecución.
+# Comando de acceso (para entrar a su terminal):
+```bash
+docker run -dit --name dam_alp1 alpine /bin/sh
+```
+
+
+
+
+
+
+
