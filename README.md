@@ -30,6 +30,11 @@ alpine /bin/sh: Usa la imagen alpine e inicia el intérprete de comandos (/bin/s
 ```bash
 docker run -dit --name dam_alp1 alpine /bin/sh
 ```
+# 4. Comprobación de IP y conectividad de 'dam_alp1'
+Comando para obtener la IP:
+```bash
+docker inspect -f '{{.NetworkSettings.IPAddress}}' dam_alp1
+```
 
 
 
